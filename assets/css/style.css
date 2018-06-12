@@ -1,0 +1,14 @@
+.navbar {
+  margin-bottom: 0;
+  background-color: #d9edf7!important;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+
+body {
+    font-family: font-family, 'Arial', Helvetica, sans-serif;
+    background: url("../images/gems_faling.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+  

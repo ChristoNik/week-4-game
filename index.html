@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="assets/css/resetcss.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystals Collector</title>
+    <!--Link to the jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <!-- Link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!--Link to Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+</head>
+<body>
+    <!--The navbar -->
+    <div class="navbar">
+        <h1 class="text-center">Crystals Collector!</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!--The Rules-->
+            <div class="col-lg-6">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">How to play</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ol>
+                            <li>You will be given a random number at the start of the game in the panel titled "Number to Match".</li><br>
+                            <li>There are four crystals. Blue, Green, Red and Yellow. By clicking on the Green and Yellow and by moving your mouseover the Blue and Red
+                                you will add a specific amount of points to your total score shown in the field "Your Number"</li><br>
+                            <li>You will win the game by matching your total score shown in the field "Your Number" to
+                                the random number, shown in the field "Number to match"or lose the game if your total score
+                                in the "Your Number" field goes above the number in the field "Number to match"</li><br>
+                            <li>The value of each crystal is hidden from you until you click on it and figure how
+                                much it is worth by doing simple math in your head (or on your phone).</li><br>
+                            <li>Each time the game is restarted the values of each crystals and the value you have to
+                                guess is randomised</li><br>
+                            <li>The times you loose or win are recorded in the field named "Score"</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!-- Christal panel -->
+            <div class="col-lg-6">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Crystals</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="thumbnail">
+                                        <img id="blue" src="assets/images/blue.png" alt="blue">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="thumbnail">
+                                        <img id="green" src="assets/images/green.png" alt="green">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="thumbnail">
+                                        <img id="red" src="assets/images/red.png" alt="red">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="thumbnail">
+                                        <img id="yellow" src="assets/images/yellow.png" alt="yellow">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="panel panel-info">
+                    <div id=total class="panel-heading">
+                        <h3 class="panel-title">Your Number</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h1 id="totalNumber"></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Number To Match</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h1 id="numberToGuess"></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Score</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h4>Wins: <span id="wins"></span></h4>
+                        <h4>Losses: <span id="losses"></span></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
